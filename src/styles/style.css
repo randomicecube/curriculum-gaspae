@@ -7,9 +7,27 @@
   font-family: 'Ropa Sans', sans-serif;
   --resume-color-primary: #303952;
   --resume-color-secondary: #e7e2e2;
-  --resume-color-tertiary: #465ea0;
+  --resume-color-tertiary: #4b5d8d;
   --resume-color-details: #606c91;
+  -webkit-print-color-adjust: exact !important;   /* Chrome, Safari, Edge */
+  color-adjust: exact !important;                 /* Firefox */
 }
+
+/* avoids date and filename appearing at the beginning of every page */
+@page {
+  size: auto;
+  margin: 0mm;
+}
+
+/* avoids blank pages appearing at the end of the printable file */
+/* @media print {
+  html, body {
+    height: 100vh;  
+    margin: 0 !important; 
+    padding: 0 !important;
+    overflow: hidden;
+  }
+} */
 
 body {
   background: #585c68;
@@ -48,13 +66,13 @@ a:hover {
 }
 
 .resume .resume_left {
-  width: 280px;
+  width: 250px;
   background: var(--resume-color-primary);
 }
 
 .resume .resume_left .resume_profile {
   width: 100%;
-  height: 280px;
+  height: 250px;
 }
 
 .resume .resume_left .resume_profile img {
@@ -245,4 +263,8 @@ a:hover {
 
 .resume .resume_right .resume_hobby ul li:last-child:before {
   display: none;
+}
+
+.force_link_color {
+  color: #555555 !important;
 }
