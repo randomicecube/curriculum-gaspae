@@ -28,7 +28,13 @@
   }
 
   .resume {
+    width: auto !important;
     margin: 0px auto !important;
+  }
+
+  .resume resume_left,
+  .resume .resume_right {
+    height: 100vh;
   }
 }
 
@@ -65,7 +71,7 @@ a:hover {
   width: 800px;
   height: auto;
   display: flex;
-  margin: 50px auto;
+  margin: 0px auto;
 }
 
 .resume .resume_left {
