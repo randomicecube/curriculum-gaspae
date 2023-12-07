@@ -32,7 +32,7 @@
     margin: 0px auto !important;
   }
 
-  .resume resume_left,
+  .resume .resume_left,
   .resume .resume_right {
     height: 100vh;
   }
@@ -41,7 +41,7 @@
 body {
   background: #585c68;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 18px;
   color: #555555;
 }
 
@@ -94,7 +94,7 @@ a:hover {
 }
 
 .resume .title {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .resume .resume_left .bold {
@@ -106,7 +106,7 @@ a:hover {
 }
 
 .resume .resume_item {
-  padding: 25px 0;
+  padding: 5px 0;
   border-bottom: 2px solid var(--resume-color-details);
 }
 
@@ -117,7 +117,7 @@ a:hover {
 
 .resume .resume_left ul li {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   align-items: center;
 }
 
@@ -197,7 +197,7 @@ a:hover {
 
 .resume .resume_right .resume_work ul,
 .resume .resume_right .resume_education ul {
-  padding-left: 40px;
+  padding-left: 30px;
   overflow: hidden;
 }
 
@@ -238,7 +238,7 @@ a:hover {
   top: 14px;
   left: -21px;
   width: 2px;
-  height: 200px;
+  height: 150px;
   background: var(--resume-color-tertiary);
 }
 
